@@ -324,9 +324,12 @@ span {
         font-size: 1rem;
         font-weight: 600;
         text-decoration: none;
+        font-style: normal;
         color: #fff;
 }
-
+#contact > div > div > address > p > a:hover {
+        border-bottom: 1px solid #fff;
+}
 /*------ COL-MD-IDS ------*/
 @media screen and (min-width: 768px) {
 
