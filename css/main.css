@@ -18,13 +18,13 @@
 
 6.0 - Components: specific designed components
         - Col-Sm-Ids
-        - Home
-        - Features
-        - Work
-        - Contact
+                - Home
+                - Features
+                - Work
+                - Contact
         - Col-Md-Ids
-        - Col-Lg-Ds
-
+        - Col-Lg-IDs
+        - Navigation
  7.0 - Utilities:
         - Screen Reader   
 --------------------------------------------------------------*/
@@ -260,7 +260,9 @@ span {
         background-color: #10443F;
         position: fixed;
         top: 0;
+        z-index: 1;
         width: 100%;
+        padding: 10px 0px 10px;
 }
 #home p:last-child {
         display: inline-block;
