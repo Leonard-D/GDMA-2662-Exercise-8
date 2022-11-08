@@ -17,9 +17,13 @@
         - Col-Lg
 
 6.0 - Components: specific designed components
-        - Header
-        - Img-id
-        - Background color
+        - Col-Sm-Ids
+        - Home
+        - Features
+        - Work
+        - Contact
+        - Col-Md-Ids
+        - Col-Lg-Ds
 
  7.0 - Utilities:
         - Screen Reader   
@@ -50,7 +54,7 @@ html {
 
 h1 {
         font-size: 3.4rem;
-        margin: 2.5em 0 .25em;
+        margin: 2.5em 0 0;
         font-weight: 400;
 }
 h2 {
@@ -74,10 +78,12 @@ p {
 header > div:last-child > p:nth-child(2) {
         font-size: 1.7rem;
         font-weight: 300;
+        margin: 0 auto;
 }
 header > div:last-child > p:nth-child(3) {
         font-size: 1.4rem;
         font-weight: 300;
+        margin: 20px 0px 50px 0px;
 }
 span {
         color: #1EA78D;
@@ -114,11 +120,6 @@ span {
 .img-responsive {
         max-width: 100%;
 }
-/* [class*='col-'] div {
-        background-color: #D9D9D9;
-        height: 100%;
-        padding: 5px;
-} */
 [class*='col-'] {
         padding: 5px;
 }
@@ -260,64 +261,14 @@ span {
     6.0 - COMPONENTS
 -------------------------------------------------------------- */
 
-/*------ IMG-ID ------*/
-@media screen and (min-width: 1024px) {
-        .row > div {
-                text-align: left;
-        }
-        .row > nav {
-                text-align: right;
-        }
-        img {
-                width: 129px;
-        }
-}
-.row div {
-        margin: 0 auto;
-}
-#features {
-        background-color: #F4F7F9; 
-        padding-bottom: 4em;
-}
-#features > div > div {
-        width: 345px;
-}
-#features > div > div > section > p {
-        color: #717982;
-        line-height: 24.6px;
-}
-#work > div > div > p {
-        font-size: 1.2rem;
-        font-weight: 700;
-        line-height: 28.11px;
-        color: #717982;
-        text-align: center;
-}
-#contact {
-        background-color: #1EA78D;
-        border-top: 4px solid #10443F;
-        padding: 30px;
-}
-#contact > div > div > p{
-        font-size: 1rem;
-        font-weight: 400;
-        color: #fff;
-        line-height: 24.6px;
-        width: 345px;
-}
-#contact > div > div > address > p > a,
-#contact > div > div > address > p{
-        font-size: 1rem;
-        font-weight: 600;
-        text-decoration: none;
-        color: #fff;
-}
-/* ----- HEADER ----- */
+/*------ COL-SM-IDS ------*/
+/* ----- HOME----- */
 #home {
         background-color: #104F41;
         text-align: center;
         color: #fff;
 }
+
 #home > div:first-child {
         background-color: #10443F;
 }
@@ -342,6 +293,60 @@ span {
 }
 #home p:last-child::after {
         right: -37px;
+}
+/* ----- FEATURES ----- */
+#features {
+        background-color: #F4F7F9; 
+        padding-bottom: 4em;
+}
+#features > div > div > section > p {
+        color: #717982;
+        line-height: 24.6px;
+}
+/* ----- WORK----- */
+#work > div > div > p {
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 28.11px;
+        color: #717982;
+        text-align: center;
+}
+/* ----- CONTACT ----- */
+#contact {
+        background-color: #1EA78D;
+        border-top: 4px solid #10443F;
+        padding: 30px;
+}
+#contact > div > div > p{
+        font-size: 1rem;
+        font-weight: 400;
+        color: #fff;
+        line-height: 24.6px;
+        width: 345px;
+}
+#contact > div > div > address > p > a,
+#contact > div > div > address > p{
+        font-size: 1rem;
+        font-weight: 600;
+        text-decoration: none;
+        color: #fff;
+}
+
+/*------ COL-MD-IDS ------*/
+@media screen and (min-width: 768px) {
+
+}
+/*------ COL-LG-IDS ------*/
+@media screen and (min-width: 1024px) {
+        .row > div {
+                text-align: left;
+        }
+        .row > nav {
+                text-align: right;
+        }
+        img {
+                width: 129px;
+        }
 }
 /* ----- NAVIGATION ----- */
 nav ul {
@@ -370,4 +375,3 @@ nav li > a:hover {
         justify-content: center;
 }
 
-/* ----- SCREEN READER ----- */
